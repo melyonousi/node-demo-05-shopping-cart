@@ -1,0 +1,15 @@
+<div class="container">
+    {{#if carts}}
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        {{#each carts}}
+        <div class="p-4 text-white">
+            <p>User ID:: {{this._idUser}}</p>
+            <p>Product ID:: {{this._idProduct}}</p>
+            <p>Cart ID:: {{this._id}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    <div class=" vh-100 text-center pt-4  text-white"><strong>No Product Found, Please Add some Products</strong></div>
+    {{/if}}
+</div>
